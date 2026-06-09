@@ -253,7 +253,7 @@ export default function DetailView({
         background: "linear-gradient(135deg, rgba(25, 25, 30, 0.75) 0%, rgba(12, 12, 15, 0.95) 100%)",
         border: "1px solid var(--smoke-grey)",
         borderRadius: "16px",
-        padding: "2.5rem",
+        padding: "clamp(1rem, 4vw, 2.5rem)",
         boxShadow: "0 25px 60px rgba(0,0,0,0.7)",
         marginBottom: "2.5rem",
         position: "relative",
@@ -391,7 +391,7 @@ export default function DetailView({
 
             <h2 style={{
               fontFamily: "var(--font-display)",
-              fontSize: "2.75rem",
+              fontSize: "clamp(1.5rem, 6vw, 2.75rem)",
               fontWeight: "800",
               color: "#FFF",
               margin: "0 0 1rem 0",

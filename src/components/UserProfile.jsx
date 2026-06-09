@@ -236,7 +236,7 @@ export default function UserProfile({
         background: "linear-gradient(135deg, rgba(34, 34, 40, 0.4) 0%, rgba(15, 15, 18, 0.8) 100%)",
         border: "1px solid var(--smoke-grey)",
         borderRadius: "16px",
-        padding: "2.5rem",
+        padding: "clamp(1rem, 5vw, 2.5rem)",
         marginBottom: "2.5rem",
         position: "relative",
         boxShadow: "0 15px 40px rgba(0, 0, 0, 0.6)",
@@ -262,7 +262,7 @@ export default function UserProfile({
           pointerEvents: "none"
         }} />
 
-        <div style={{
+        <div className="user-profile-header" style={{
           display: "flex",
           flexDirection: "row",
           alignItems: "flex-start",
@@ -322,7 +322,7 @@ export default function UserProfile({
                 <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "0.5rem" }}>
                   <h3 style={{
                     fontFamily: "var(--font-display)",
-                    fontSize: "2rem",
+                    fontSize: "clamp(1.4rem, 5vw, 2rem)",
                     fontWeight: "800",
                     color: "#FFFFFF",
                     margin: 0,
@@ -523,7 +523,7 @@ export default function UserProfile({
       {/* Grid of Stats and Log System */}
       <div style={{
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+        gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
         gap: "2rem",
         marginBottom: "3rem"
       }}>
@@ -779,7 +779,7 @@ export default function UserProfile({
           </h4>
           
           {/* Sub-tabs Watching, Completed, Plan to Watch */}
-          <div style={{ display: "flex", gap: "8px" }}>
+          <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
             {[
               { id: "watching", label: "📺 Watching", color: "var(--cigarette-orange)" },
               { id: "completed", label: "✅ Completed", color: "#28a745" },

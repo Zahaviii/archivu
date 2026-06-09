@@ -287,7 +287,7 @@ export default function RankingView({
         </div>
         <h2 style={{ 
           fontFamily: "var(--font-display)", 
-          fontSize: "3rem", 
+          fontSize: "clamp(1.6rem, 6vw, 3rem)", 
           fontWeight: "800", 
           color: "#FFFFFF", 
           marginBottom: "0.5rem",

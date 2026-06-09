@@ -397,7 +397,7 @@ export default function App() {
               </div>
               <h2 style={{ 
                 fontFamily: "var(--font-display)", 
-                fontSize: "3.25rem", 
+                fontSize: "clamp(1.8rem, 7vw, 3.25rem)", 
                 fontWeight: "800", 
                 color: "#FFFFFF", 
                 marginBottom: "0.75rem",
@@ -598,7 +598,7 @@ export default function App() {
 
                   <h3 style={{
                     fontFamily: "var(--font-display)",
-                    fontSize: "2.25rem",
+                    fontSize: "clamp(1.4rem, 5vw, 2.25rem)",
                     fontWeight: "700",
                     color: "#FFFFFF",
                     margin: "0 0 1rem 0",
